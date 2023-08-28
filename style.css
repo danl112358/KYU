@@ -1,0 +1,666 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: "Poiret One", cursive;
+}
+
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("imagenes/motoki-tonn-RF6NLFcWsxk-unsplash.jpg") bottom right no-repeat, url("imagenes/hobi-industri-UD11mGei8GE-unsplash.jpg") center no-repeat, url("imagenes/janko-ferlic-Visezp_DeTU-unsplash.jpg") center repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#inicio .contenido header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100%;
+  top: 0%;
+}
+
+#inicio .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  color: #fff;
+  margin: 20px 12px;
+  font-weight: 400;
+  transition: 0.5%;
+}
+
+#inicio .contenido header .contenido-header nav ul li a:hover {
+  color: #B0A1BA;
+}
+
+#inicio .contenido .Presentacion {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 10px;
+  font-weight: 22px;
+}
+
+#inicio .contenido .Presentacion p {
+  font-weight: 22px;
+}
+
+#inicio .contenido .Presentacion .bienvenida {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+#inicio .contenido .Presentacion h2 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: "Petit Formal Script", cursive;
+}
+
+#inicio .contenido .Presentacion .descripcion {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 140px;
+  height: 50px;
+  border-radius: 0.5em;
+  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+  overflow: hidden;
+}
+
+button div {
+  transform: translateY(0px);
+  width: 100%;
+}
+
+button,
+button div {
+  transition: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+button div span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0.75em 1.125em;
+}
+
+button div:nth-child(1) {
+  background-color: #1e90ff;
+}
+
+button div:nth-child(2) {
+  background-color: #21dc62;
+}
+
+button:hover {
+  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+}
+
+button:hover div {
+  transform: translateY(-50px);
+}
+
+button p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/*Seccion kyu*/
+#kyu {
+  margin: auto;
+  padding: 100px 15px;
+  color: #111135;
+  display: flex;
+  text-align: center;
+  background-color: #f3f3f3;
+}
+
+#kyu .contenedor-foto {
+  display: flex;
+  width: 600px;
+  height: 430px;
+  margin: auto;
+}
+
+#kyu .contenedor-foto img {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  flex-direction: column;
+  left: 75%;
+  animation: fadeIn 3s ease;
+  width: 0;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.8;
+  transition: all 0.5s ease;
+  object-fit: cover;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.8);
+  background-color: #EFEFEF;
+}
+
+#kyu .contenedor-foto img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+  transition: ease;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
+#kyu .Kyu {
+  margin: 0 40px;
+}
+
+#kyu .Kyu {
+  font-size: 22px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+#kyu .Kyu img {
+  width: 300px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-right: 75px;
+  border-radius: 200px;
+  background-color: #546A7B;
+}
+
+/*Seccion artistas*/
+article {
+  position: relative;
+  width: 250px;
+  transition: all 0.3s ease;
+  border-radius: 100px;
+}
+
+article img:first-child {
+  box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+article img:last-child {
+  position: absolute;
+  width: 200px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(25%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+article:hover {
+  transform: perspective(250px) rotateX(10deg) translateY(-5%) translateZ(0);
+}
+
+article::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 95%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+article:hover::before {
+  opacity: 1;
+}
+
+article:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+#artistas {
+  padding: 100px 15px;
+  text-align: center;
+  background-color: #fff;
+  background: linear-gradient(#000411, rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url("imagenes/1539.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+#artistas .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+  letter-spacing: 2px;
+  color: #f3f3f3;
+}
+
+#artistas .fila .artista .contenido- {
+  display: flex;
+  min-height: 100vh;
+  color: #f3f3f3;
+}
+
+#artistas .fila .artista .contenido- .artista1 {
+  border-radius: 70px;
+  border: red;
+  box-sizing: border-box;
+  border: 5px;
+  max-width: 100%;
+  width: 400px;
+  padding: 50px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+#artistas .fila .artista .contenido- .artista2 {
+  border-radius: 70px;
+  border: red;
+  box-sizing: border-box;
+  border: 5px;
+  max-width: 100%;
+  width: 400px;
+  padding: 50px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+#artistas .fila .artista .contenido- .artista3 {
+  border-radius: 70px;
+  border: red;
+  box-sizing: border-box;
+  border: 5px;
+  max-width: 100%;
+  width: 400px;
+  padding: 50px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+#artistas .fila .artista .contenido- .artista4 {
+  border-radius: 70px;
+  border: red;
+  box-sizing: border-box;
+  border: 5px;
+  max-width: 100%;
+  width: 400px;
+  padding: 50px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+#artistas .fila .artista .contenido- .artista5 {
+  border-radius: 70px;
+  border: red;
+  box-sizing: border-box;
+  border: 5px;
+  max-width: 100%;
+  width: 400px;
+  padding: 50px;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+
+#artistas .fila .artista .contenido- .artista1 h2 {
+  top: -50%;
+  padding: 22px 22px;
+}
+
+#artistas .fila .artista .contenido- .artista2 h2 {
+  padding: 22px 22px;
+}
+
+#artistas .fila .artista .contenido- .artista3 h2 {
+  padding: 22px 22px;
+}
+
+#artistas .fila .artista .contenido- .artista4 h2 {
+  padding: 22px 22px;
+}
+
+#artistas .fila .artista .contenido- .artista5 h2 {
+  padding: 22px 22px;
+}
+
+#artistas .fila .artista .contenido- .artista1 p {
+  padding: 18px 18px;
+}
+
+#artistas .fila .artista .contenido- .artista2 p {
+  padding: 18px 18px;
+}
+
+#artistas .fila .artista .contenido- .artista3 p {
+  padding: 18px 18px;
+}
+
+#artistas .fila .artista .contenido- .artista4 p {
+  padding: 18px 18px;
+}
+
+#artistas .fila .artista .contenido- .artista5 p {
+  padding: 18px 18px;
+}
+
+#bu {
+  display: flex;
+}
+
+.button {
+  margin: 12px auto;
+  text-align: center;
+  grid: 75%;
+}
+
+/*boton reservar*/
+/* From uiverse.io by @Ali-Tahmazi99 */
+.button {
+  --color: #00A97F;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+  letter-spacing: 1px;
+  right: 40px;
+}
+
+.button::before, .button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 1s ease;
+}
+
+.button::before {
+  top: -1em;
+  left: -1em;
+}
+
+.button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.button:hover {
+  color: rgb(10, 25, 30);
+}
+
+.button:active {
+  filter: brightness(0.8);
+}
+
+/*seccion galeria*/
+#galeria .t-galeria {
+  max-width: 1500px;
+  padding: 125px 960px;
+  max-height: 10px;
+  background: linear-gradient(90deg, rgb(2, 0, 1) 0%, rgb(121, 9, 9) 25%, rgb(200, 0, 0) 100%);
+  display: grid;
+  place-content: center;
+}
+
+#galeria .t-galeria h3 {
+  font-family: "Yatra One", cursive;
+  font-size: 100px;
+  text-align: center;
+}
+
+#galeria .t-galeria .box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+#galeria .t-galeria .box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(7) {
+  top: 80%;
+  left: 70%;
+  animation: animate 15s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+
+#galeria .t-galeria .box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1) translateY(-90px) rotate(360deg);
+    opacity: 1;
+  }
+}
+#galeria .galeria .colum img {
+  width: 100%;
+  cursor: crosshair;
+  margin: auto;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+#galeria .galeria .colum img:hover {
+  transform: scale(1.7);
+  transition: 1s;
+  border-radius: 25px;
+}
+
+#galeria .galeria .colum {
+  display: flex;
+  flex: 25%;
+}
+
+#galeria .t-galeria {
+  display: flex;
+  flex: 25%;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+  nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    padding: 10px 0;
+  }
+  nav.responsive ul {
+    display: block !important;
+    text-align: center;
+  }
+  nav.responsive ul li {
+    margin: 5px 0;
+  }
+  #inicio .contenido .Presentacion h2 {
+    font-size: 40px;
+  }
+  #inicio .contenido .Presentacion p {
+    margin: 3px 60px;
+  }
+  #kyu {
+    padding: 50px 0;
+    display: block;
+  }
+  #kyu .contenedor-foto {
+    max-width: 200px;
+    margin: auto;
+    max-height: 200px;
+    padding: auto 100px;
+  }
+  #kyu .contenedor-foto img {
+    padding: 8px;
+  }
+  #kyu .Kyu {
+    padding: 15px;
+  }
+  #artistas {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #fff;
+    background: linear-gradient(#000411, rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), url("imagenes/1539.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  #artistas .fila .artista .contenido- {
+    display: block;
+  }
+  #artistas .fila .artista .contenido- .artista1 img {
+    margin: 10px auto;
+  }
+  #artistas .fila .artista .contenido- .artista2 {
+    margin: 10px auto;
+  }
+  #artistas .fila .artista .contenido- .artista3 {
+    margin: 10px auto;
+  }
+  #artistas .fila .artista .contenido- .artista4 {
+    margin: 10px auto;
+  }
+  #artistas .fila .artista .contenido- .artista5 {
+    margin: 10px auto;
+  }
+  #galeria {
+    height: 300px;
+    width: 400px;
+  }
+  article {
+    max-width: 200px;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
